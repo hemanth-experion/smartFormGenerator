@@ -1,0 +1,59 @@
+
+<form  #formId>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Select your template:</h3>
+
+    </div>
+    <div class="col-sm-8">
+      <select class="btn btn-default btn-lg" ngModel name="templateName"  required (change)="viewTemplate($event.target.value)">
+        <option value="" selected>
+          Select template
+        </option>
+      <option *ngFor="let template of templates" [value]=template.Id>{{template.TemplateName}}</option>
+      </select>
+    </div>
+  </div>
+
+</form>
+
+
+<div>
+<div class="row">
+    
+</div>
+  <div *ngFor="let spec of allTemplates">
+    <div class="row">
+
+      <div class="col-sm-6 " >
+        {{spec?.Label}}
+      </div>
+
+      <div class="col-sm-4" *ngIf="(spec?.ControlType === 'textbox')">
+        <input type="{{spec?.ControlType}}" [disabled]="spec?.IsReadOnly" class="form-control" [hidden]="spec?.IsVisible | visiblity">
+      </div>
+
+      <div class="col-sm-4" *ngIf="(spec?.ControlType === 'checkbox')">
+        <input type="{{spec?.ControlType}}" [disabled]="spec?.IsReadOnly"  class="form-control" [hidden]="spec?.IsVisible | visiblity">
+      </div>
+
+      <div class="col-sm-4" *ngIf="(spec?.ControlType === 'number')">
+        <input type="{{spec?.ControlType}}" [disabled]="spec?.IsReadOnly"  class="form-control" [hidden]="spec?.IsVisible | visiblity ">
+      </div>
+
+      <div class="col-sm-4" *ngIf="(spec?.ControlType === 'dropdown')"  class="form-control" [hidden]="spec?.IsVisible | visiblity">
+        <select>
+          <option value="volvo">Volvo</option>
+         <option value="saab">Saab</option>
+          <option value="vw">VW</option>
+        </select>
+      </div>
+
+      <div class="col-sm-4" *ngIf="(spec?.ControlType === 'textarea')">
+        <textarea [disabled]="spec?.IsReadOnly" [hidden]="spec?.IsVisible | visiblity"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+</div>

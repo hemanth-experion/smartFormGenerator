@@ -1,0 +1,25 @@
+<form class="form-horizontal" #f="ngForm">
+ <div style = "margin-top: 1cm;"class="container">
+ <div class="row">
+   <div class="col-sm-6">
+ <label for="title">Question</label>
+ </div>
+<div class="form-group" style = "margin-top: .5cm;" class="col-sm-6">
+ <input type="text" ngModel name="title" required>
+ </div>
+</div>
+<div class="row">
+   <div  style = "margin-top: .5cm;"class="col-sm-6">
+ <label for="title">Question Description</label>
+ </div>
+<div  style = "margin-top: .5cm;"class="col-sm-6">
+ <textarea rows="4" cols="50" ngModel required name="description">
+   </textarea>
+ </div>
+ <div  style = "margin-top: .5cm;"class="col-sm-6">
+<button type="reset"  (click)="make(f)">Submit</button>
+ </div>
+</div>
+ </div>
+ </form>
+

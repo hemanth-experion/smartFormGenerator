@@ -1,0 +1,14 @@
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Experion.Marina.Core.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Experion.Marina.Core.pdb
+D:\Marina API Framework\src\src\Experion.Marina.Core\obj\Debug\Experion.Marina.Core.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\obj\Debug\Experion.Marina.Core.pdb
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Autofac.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\BouncyCastle.Crypto.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\MailKit.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\MimeKit.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Autofac.xml
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\MailKit.xml
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\MimeKit.xml
+D:\Marina API Framework\src\src\Experion.Marina.Core\bin\Debug\Newtonsoft.Json.xml
+D:\Marina API Framework\src\src\Experion.Marina.Core\obj\Debug\Experion.Marina.Core.csprojResolveAssemblyReference.cache

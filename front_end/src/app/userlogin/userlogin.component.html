@@ -1,0 +1,24 @@
+<div class="text-center" style="padding:50px 0">
+	<div class="logo">Login</div>
+	<!-- Main Form -->
+	<div class="login-form-1">
+		<form class="text-left" (ngSubmit)="onSubmit(formId)" #formId="ngForm">
+			<div class="login-form-main-message"></div>
+			<div class="main-login-form">
+				<div class="login-group">
+					<div class="form-group">
+						<label for="lg_username" class="sr-only">Username</label>
+						<input type="text" class="form-control" id="lg_username" ngModel name="lg_username" placeholder="username" required>
+					</div>
+					<div class="form-group">
+						<label for="lg_password" class="sr-only">Password</label>
+						<input type="password" class="form-control" id="lg_password" ngModel name="lg_password" placeholder="password"required>
+					</div>
+				</div>
+				<button type="submit" class="login-button"><span class="glyphicon glyphicon-chevron-right"></span></button>
+				<p><span id="errorMessage" name="errorMessage" style="color:red;"></span></p>
+			</div>
+		</form>
+	</div>
+	<!-- end:Main Form -->
+</div>

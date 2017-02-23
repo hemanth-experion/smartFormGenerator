@@ -1,0 +1,24 @@
+
+<div  style="margin-top:3cm;"class="row">
+  <div class="col-sm-6">
+    <label for="title">{{title}}</label>
+    </div>
+    <div class="col-sm-6">
+    <label for="description">{{description}}</label>
+    </div>
+    <div class="col-sm-6">
+    <label >Answers  {{count}}</label>
+    </div>
+    <div class="col-sm-6">
+    <div class="col-sm-6" *ngFor="let ans of ans1">
+      <label for="answer">{{ans}}</label>
+      </div>
+      </div>
+  <div class="col-sm-6">
+  <a [routerLink]="['answer',index]">Answer now</a>
+  <router-outlet></router-outlet>
+   </div>
+   </div>
+   
+
+

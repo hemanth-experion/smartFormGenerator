@@ -1,0 +1,13 @@
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Experion.Marina.Common.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Experion.Marina.Common.pdb
+D:\Marina API Framework\src\src\Experion.Marina.Common\obj\Debug\Experion.Marina.Common.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\obj\Debug\Experion.Marina.Common.pdb
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Autofac.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Newtonsoft.Json.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\NLog.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Autofac.xml
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\Newtonsoft.Json.xml
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\NLog.xml
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\DotNetZip.dll
+D:\Marina API Framework\src\src\Experion.Marina.Common\bin\Debug\DotNetZip.xml
+D:\Marina API Framework\src\src\Experion.Marina.Common\obj\Debug\Experion.Marina.Common.csprojResolveAssemblyReference.cache

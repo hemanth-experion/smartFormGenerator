@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">SmartFormGenerator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a class="right-align" [routerLink]="['create']">Create</a></li>
+      <li><a class="right-align" [routerLink]="['view']">View</a></li>
+      <li><a class="right-align" (click)="clearStorage()">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<hr/>
+<div class="body">
+  <router-outlet></router-outlet>
+</div>

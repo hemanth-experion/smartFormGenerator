@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B4B9F7F-4D8F-4E32-A30E-2632A0F3E3D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Experion.Marina.Data.Services</RootNamespace>
+    <AssemblyName>Experion.Marina.Data.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.4.3.0\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.4.23.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Z.EntityFramework.Plus.EF6.1.4.23\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\DataService.cs" />
+    <Compile Include="Base\EntityFramework\DbContextExtensions.cs" />
+    <Compile Include="Base\EntityFramework\DbContextMetadata.cs" />
+    <Compile Include="Base\EntityFramework\Repository.cs" />
+    <Compile Include="Base\EntityFramework\RepositoryContext.cs" />
+    <Compile Include="Base\IEntity.cs" />
+    <Compile Include="Base\IRepository.cs" />
+    <Compile Include="Base\IRepositoryContext.cs" />
+    <Compile Include="Base\IUnitOfWork.cs" />
+    <Compile Include="Base\Specification.cs" />
+    <Compile Include="Entities\Details.cs" />
+    <Compile Include="Entities\TemplateDetails.cs" />
+    <Compile Include="Entities\IAuditable.cs" />
+    <Compile Include="Entities\Template.cs" />
+    <Compile Include="Entities\UserCredential.cs" />
+    <Compile Include="Entities\UserValid.cs" />
+    <Compile Include="MarinaContext.cs" />
+    <Compile Include="MarinaRepositoryContext.cs" />
+    <Compile Include="MigrationContextFactory.cs" />
+    <Compile Include="Migrations\201702221119247_TablesCreated.cs" />
+    <Compile Include="Migrations\201702221119247_TablesCreated.Designer.cs">
+      <DependentUpon>201702221119247_TablesCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TemplateDataService.cs" />
+    <Compile Include="Services\UserDataService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Experion.Marina.Common\Experion.Marina.Common.csproj">
+      <Project>{b5d21ae1-199d-41e8-ac95-6969c58fb9f4}</Project>
+      <Name>Experion.Marina.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Experion.Marina.Core\Experion.Marina.Core.csproj">
+      <Project>{c3a2f96d-1922-418b-bf98-2a12d2f44279}</Project>
+      <Name>Experion.Marina.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Experion.Marina.Data.Contracts\Experion.Marina.Data.Contracts.csproj">
+      <Project>{f8a5cf8b-c63d-448c-9708-729071533a18}</Project>
+      <Name>Experion.Marina.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Experion.Marina.Dto\Experion.Marina.Dto.csproj">
+      <Project>{2C1E9BF1-F744-4538-A792-7EDF6093CBD6}</Project>
+      <Name>Experion.Marina.Dto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702221119247_TablesCreated.resx">
+      <DependentUpon>201702221119247_TablesCreated.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
